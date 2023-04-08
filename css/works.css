@@ -239,6 +239,7 @@ h1 {
 .works__img {
   position: relative;
   padding-bottom: 52%;
+  cursor: pointer;
 }
 .works__img img {
   position: absolute;
