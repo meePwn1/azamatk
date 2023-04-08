@@ -9,6 +9,7 @@
 	<link type="text/css" rel="stylesheet" href="css/works.css">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width">
+	<script defer type="module" src="js/script.js"></script>
 </head>
 
 <body>
@@ -17,115 +18,206 @@
 			<h1>My works</h1>
 		</header>
 		<section class="works">
-			<div class="works__item Funiro">
-				<div class="works__img">
-					<picture>
-						<source srcset="img/FuniroMarket/funiro-poster.webp">
-						<img src="img/FuniroMarket/funiro-poster.jpg">
-					</picture>
+			<div class="works__container">
+				<div class="works__filter filter">
+					<button data-work-type="All" class="filter__button  active">Все</button>
+					<button data-work-type="ecommerce" class="filter__button ">Интернет-магазин</button>
+					<button data-work-type="landing" class="filter__button ">Landingpage</button>
+					<button data-work-type="animation" class="filter__button ">Анимация</button>
 				</div>
-				<div class="works__body">
-					<h2 class="works__title">Funiro Market</h2>
-					<p class="works__description">
-						Вёрстка LandingPage по макету Figma
-					</p>
-					<div class="works__action">
-						<a href="https://github.com/meePwn1/Funiro-Market" target="_blank" class="works__button">Code</a>
-						<a href="https://meepwn1.github.io/Funiro-Market/" target="_blank" class="works__button">Demo</a>
+				<div class="works__wrapper">
+					<div data-work-type="landing" class="works__item Funiro">
+						<div data-src-image="img/FuniroMarket/funiro.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/FuniroMarket/funiro-poster.webp">
+								<img src="img/FuniroMarket/funiro-poster.jpg">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Funiro Market</h2>
+							<p class="works__description">
+								Вёрстка LandingPage по макету Figma
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/Funiro-Market" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/Funiro-Market/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="works__item JL">
-				<div class="works__img">
-					<picture>
-						<source srcset="img/JL/JL-poster.webp">
-						<img src="img/JL/JL-poster.jpg">
-					</picture>
-				</div>
-				<div class="works__body">
-					<h2 class="works__title">JL</h2>
-					<p class="works__description">
-						Лендинг для онлайн школы JL
-					</p>
-					<div class="works__action">
-						<a href="https://github.com/meePwn1/Jahangir-Latipov" target="_blank" class="works__button">Code</a>
-						<a href="https://meepwn1.github.io/Jahangir-Latipov/dist/home.html" target="_blank" class="works__button">Demo</a>
+					<div data-work-type="landing" class="works__item JL">
+						<div data-src-image="img/JL/JL.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/JL/JL-poster.webp">
+								<img src="img/JL/JL-poster.jpg">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">JL</h2>
+							<p class="works__description">
+								Лендинг для онлайн школы JL. Слайдер Swiper с прогрессбаром.
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/Jahangir-Latipov" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/Jahangir-Latipov/dist/home.html" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="works__item Logo">
-				<div class="works__img">
-					<picture>
-						<source srcset="img/LOGO/LOGO-poster.webp">
-						<img src="img/LOGO/LOGO-poster.png">
-					</picture>
-				</div>
-				<div class="works__body">
-					<h2 class="works__title">Logo Market</h2>
-					<p class="works__description">
-						Вёрстка интернет магазина Logo
-					</p>
-					<div class="works__action">
-						<a href="https://github.com/meePwn1/Logo" target="_blank" class="works__button">Code</a>
-						<a href="https://meepwn1.github.io/Logo/dist/index" target="_blank" class="works__button">Demo</a>
+					<div data-work-type="animation,landing" class="works__item ciclo">
+						<div data-src-image="img/Ciclo/ciclo.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/Ciclo/ciclo-poster.webp">
+								<img src="img/Ciclo/ciclo-poster.jpg">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Ciclo</h2>
+							<p class="works__description">
+								Сложная вёрстка с полноэкранным скроллом и анимацией.
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/ciclo" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/ciclo/dist/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="works__item SpiderShiba">
-				<div class="works__img">
-					<picture>
-						<source srcset="img/SpiderShiba/SpiderShiba-poster.webp">
-						<img src="img/SpiderShiba/SpiderShiba-poster.jpg">
-					</picture>
-				</div>
-				<div class="works__body">
-					<h2 class="works__title">SpiderShiba</h2>
-					<p class="works__description">
-						Вёрстка лендинга SpiderShiba
-					</p>
-					<div class="works__action">
-						<a href="https://github.com/meePwn1/SpiderShiba" target="_blank" class="works__button">Code</a>
-						<a href="https://meepwn1.github.io/SpiderShiba/" target="_blank" class="works__button">Demo</a>
+					<div data-work-type="ecommerce" class="works__item Logo">
+						<div data-src-image="img/LOGO/LOGO.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/LOGO/LOGO-poster.webp">
+								<img src="img/LOGO/LOGO-poster.png">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Logo Market</h2>
+							<p class="works__description">
+								Вёрстка интернет магазина Logo
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/Logo" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/Logo/dist/index" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="works__item Zlatmax">
-				<div class="works__img">
-					<picture>
-						<source srcset="img/Zlatmax/Zlatmax-poster.webp">
-						<img src="img/Zlatmax/Zlatmax-poster.jpg">
-					</picture>
-				</div>
-				<div class="works__body">
-					<h2 class="works__title">Zlatmax</h2>
-					<p class="works__description">
-						Вёрстка интернет магазина Zlatmax
-					</p>
-					<div class="works__action">
-						<a href="https://github.com/meePwn1/zlatmax" target="_blank" class="works__button">Code</a>
-						<a href="https://meepwn1.github.io/zlatmax/dist/" target="_blank" class="works__button">Demo</a>
+					<div data-work-type="ecommerce" class="works__item Zlatmax">
+						<div data-src-image="img/Zlatmax/Zlatmax.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/Zlatmax/Zlatmax-poster.webp">
+								<img src="img/Zlatmax/Zlatmax-poster.jpg">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Zlatmax</h2>
+							<p class="works__description">
+								Вёрстка интернет магазина Zlatmax
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/zlatmax" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/zlatmax/dist/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
 					</div>
-				</div>
-			</div>
-			<div class="works__item Calc">
-				<div class="works__img works__img_contain">
-					<picture>
-						<source srcset="img/calc/calc.webp">
-						<img src="img/calc/calc.png">
-					</picture>
-				</div>
-				<div class="works__body">
-					<h2 class="works__title">Calculator</h2>
-					<p class="works__description">
-						Обычный калькулятор
-					</p>
-					<div class="works__action">
-						<a href="https://github.com/meePwn1/Calculator-v0.3" target="_blank" class="works__button">Code</a>
-						<a href="https://meepwn1.github.io/Calculator-v0.3/" target="_blank" class="works__button">Demo</a>
+					<div data-work-type="landing" class="works__item SpiderShiba">
+						<div data-src-image="img/SpiderShiba/SpiderShiba.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/SpiderShiba/SpiderShiba-poster.webp">
+								<img src="img/SpiderShiba/SpiderShiba-poster.jpg">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">SpiderShiba</h2>
+							<p class="works__description">
+								Вёрстка лендинга SpiderShiba
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/SpiderShiba" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/SpiderShiba/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
+					</div>
+					<div data-work-type="landing" class="works__item SaulDesign">
+						<div data-src-image="img/SaulDesign/SaulDesign.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/SaulDesign/SaulDesign-poster.webp">
+								<img src="img/SaulDesign/SaulDesign-poster.jpg">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Saul Design</h2>
+							<p class="works__description">
+								Адаптивный лендинг с навигацией и фильтром.
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/saul-design" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/saul-design/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
+					</div>
+					<div data-work-type="animation" class="works__item Christmas">
+						<div data-src-image="img/Christmas/christmas.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/Christmas/christmas.webp">
+								<img src="img/Christmas/christmas.png">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Christmas Parallax</h2>
+							<p class="works__description">
+								Анимация с GSAP и параллакс при скролле.
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/saul-design" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/saul-design/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
+					</div>
+					<div data-work-type="animation" class="works__item uCard">
+						<div data-src-image="img/uCard/uCard.webp" data-popup="#popup-portfolio" class="works__img">
+							<picture>
+								<source srcset="img/uCard/uCard.webp">
+								<img src="img/uCard/uCard.png">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">uCard</h2>
+							<p class="works__description">
+								GSAP tilt animation effect.
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/uCard" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/uCard/dist" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
+					</div>
+					<div data-work-type="other" class="works__item Calc">
+						<div class="works__img works__img_contain">
+							<picture>
+								<source srcset="img/calc/calc.webp">
+								<img src="img/calc/calc.png">
+							</picture>
+						</div>
+						<div class="works__body">
+							<h2 class="works__title">Calculator</h2>
+							<p class="works__description">
+								Обычный калькулятор
+							</p>
+							<div class="works__action">
+								<a href="https://github.com/meePwn1/Calculator-v0.3" target="_blank" class="works__button">Code</a>
+								<a href="https://meepwn1.github.io/Calculator-v0.3/" target="_blank" class="works__button">Demo</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+	</div>
+	<div id="popup-portfolio" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<button data-close type="button" class="popup__close"></button>
+			<div class="popup__content">
+				<div class="popup__title"></div>
+				<div class="popup__image"> <img src="" alt=""> </div>
+			</div>
+		</div>
 	</div>
 </body>
 
